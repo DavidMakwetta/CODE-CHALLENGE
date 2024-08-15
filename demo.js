@@ -16,3 +16,8 @@ if(age >= 25){
 }else{
     console.log("You are a teenager");
 }
+
+
+let username ="Roland";
+for(let letter of username)
+    console.log(letter);
