@@ -8,11 +8,15 @@ function fizzBuzz(string1, string2) {
     (string1.length + string2.length) % 5 == 0
   ) {
     return "FizzBuzz";
-  } else if ((string1.length + string2.length) / 3) {
+  } else if ((string1.length + string2.length)%3===0) {
     return "Fizz";
-  } else if ((string1.length + string2.length) / 5) {
+  } else if ((string1.length + string2.length)%5===0) {
     return "Buzz";
+  }else{
+    return "Try again"
   }
 }
 
-console.log(fizzBuzz("hi", "hiii"));
+result= fizzBuzz("hii","hii")
+
+console.log(result)

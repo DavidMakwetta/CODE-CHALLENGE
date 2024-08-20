@@ -2,15 +2,14 @@
 Find that single one.
   */
 
-function checkNum(Nums){
-    for(let i of  Nums){
-        for(let j of Nums){
-            if(i!==j){
-                return j;
-            }
-        }
+function findSingle(nums) {
+    let result = 0;
+
+    for (const num of nums) {
+        result ^= num;
     }
+
+    return result;
 }
-const Nums =[2,2,1];
- result = checkNum(Nums);
- console.log(result);
+const nums = [2, 2, 1];
+console.log(findSingle(nums)); 
